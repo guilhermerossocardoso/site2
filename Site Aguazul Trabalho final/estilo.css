@@ -1,0 +1,556 @@
+@charset "UTF-8";
+
+/* #id e .class */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bd{
+    border-right: 1px solid black;
+    padding-right: 2vw;
+    border-bottom: 1px solid white;
+}
+header nav ul li a:hover {
+    border-right: 1px solid cyan;
+    border-bottom: 1px solid cyan;
+    box-shadow: 3px 4px 5px cyan;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    justify-content: space-between;
+    box-shadow: 0px 1px 10px black;
+    position: fixed;
+    padding-right: 3vw;
+}
+
+.conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem-container{
+    width: 500px;
+    height: auto;
+    margin-left: 2vw;
+    margin-bottom: 2vw;
+}
+
+.fadeIn{
+    width: 30vw;
+    height: 70vh;
+}
+nav{
+    display: flex;
+    align-items: center;
+    height: 120px;
+    width: auto;
+    font-size: xx-large;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    color: darkblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+}
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    gap: 20px;
+  
+}
+ 
+li {
+    display: flex;
+    padding: 1%;
+    
+}
+a {
+    text-decoration: none;
+    color: rgb(7, 35, 161); 
+    font-size: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding-top: 150px;
+    
+}
+h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 30px;
+    color: blue;
+    
+}
+
+/* roda  pe  */
+footer {
+    background-color: #3b8dc0;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+footer nav{
+    background-color: #3b8dc0;
+    justify-content: space-between;
+    height: auto;
+
+}
+
+footer nav a{
+    color: white;
+    font-size: smaller;
+}
+
+.logo{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 5vw;
+    height: 15vh;
+}
+.destaque{
+    display: flex;
+
+}
+.grupoBotao{
+    text-align: center;
+}
+/* Estilos para o botão Voltar */
+#btnVoltar {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 150%;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #3498db; /* Cor da borda do botão */
+  border-radius: 5px; /* Borda arredondada */
+  color: #3498db; /* Cor do texto */
+  background-color: #ffffff; /* Cor de fundo do botão */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+/* Efeito ao passar o mouse sobre o botão Voltar */
+#btnVoltar:hover {
+  background-color: #3498db; /* Nova cor de fundo ao passar o mouse */
+  color: #ffffff; /* Nova cor do texto ao passar o mouse */
+  border-color: #ffffff; /* Nova cor da borda ao passar o mouse */
+}
+
+/* Estilos para o botão Avançar */
+#btnAvancar {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 150%;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #3498db; /* Cor da borda do botão */
+  border-radius: 5px; /* Borda arredondada */
+  color: #3498db; /* Cor do texto */
+  background-color: #ffffff; /* Cor de fundo do botão */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+/* Efeito ao passar o mouse sobre o botão Avançar */
+#btnAvancar:hover {
+  background-color: #3498db; /* Nova cor de fundo ao passar o mouse */
+  color: #ffffff; /* Nova cor do texto ao passar o mouse */
+  border-color: #ffffff; /* Nova cor da borda ao passar o mouse */
+}
+
+#moldura {
+display: flex;
+justify-content: center;
+width: 100%;
+}
+
+.mainproduto {
+    background-image: url(imagens/fundoproduto.png);
+    background-repeat: no-repeat;
+    height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: 100px;
+}
+
+.produtos1 {
+    margin-left: 10vw;
+}
+
+.produtos2 {
+    margin-right: 10vw;
+}
+
+.produtos1, .produtos2 {
+    border-radius: 30px;
+    background-color: #79d1ff;
+}
+
+.produtos1 img, .produtos2 img {
+    width: 100%; /* Ajusta a largura para ocupar 100% do contêiner */
+    max-width: 350px; /* Limita a largura máxima para 300px */
+    max-height: 600px; /* Mantém a proporção original da imagem */
+    
+}
+
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #25d366; /* Cor verde do WhatsApp */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+/*Estilos adicionais para o ícone do WhatsApp*/
+.whatsapp-btn img {
+    width: 23px; /*Ajuste o tamanho conforme necessário */
+    height: 24px;
+    margin-left: 5px;
+    color: rgb(88, 242, 253);
+}
+
+.mcontato {
+    height: 115vh;
+}
+
+.mcontato section article p {
+    text-align: justify;
+    padding-top: 20px;
+}
+
+/* Adicione essas regras CSS ao seu estilo.css */
+
+.sobre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: flex-start; /* Alinha os itens no topo verticalmente */
+    background-color: white;
+    margin-left: 5vh;
+    margin-right: 5vh;
+    border-color: black;
+    border: solid;
+}
+
+.empresaFoto {
+    width: 100%; /* Ajuste a largura da imagem para ocupar 100% da largura da coluna */
+    max-width: 700px; /* Adicione uma largura máxima para garantir que a imagem não fique muito grande */
+    height: 300px; /* Permita que a altura seja ajustada automaticamente proporcionalmente à largura */
+    margin-bottom: 10px; /* Adicione um espaço na parte inferior da imagem */
+}
+
+.sobre article {
+    max-width: 900px; /* Defina uma largura máxima para o texto para evitar que ele se estenda muito em telas grandes */
+    margin: 30px; /* Adicione margens para espaçamento */
+}
+.textoGrande{
+    font-size: larger;
+    text-align: justify;
+    text-indent: 20px;
+}
+/* Adicione uma regra de consulta de mídia para tornar o layout mais responsivo */
+@media screen and (max-width: 1200px) {
+    .sobre {
+        flex-direction: column; /* Mude para uma coluna quando a largura da tela for menor que 768 pixels */
+        align-items: center; /* Alinhe os itens ao centro quando estiverem empilhados verticalmente */
+    }
+
+    .sobre article {
+        max-width: 100%; /* Use toda a largura disponível em telas menores */
+    }
+}
+
+
+.mcontato2 {
+    padding-top: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: 100vh;
+}
+
+.sform {
+    align-self: center;
+    border: 1px solid black;
+    width: 50vw;
+    height: 50vh;
+    background-color: white;
+
+}
+
+.sform h1 {
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    padding: 20px;
+}
+.body1 {
+    /* Adicione a URL da sua imagem de fundo no valor abaixo */
+    background-image: url('imagens/fundo.jpg');
+    /* Define a repetição da imagem */
+    background-repeat: no-repeat;
+    /* Ajusta o tamanho da imagem de fundo para cobrir toda a tela */
+    background-size: cover;
+    /* Centraliza a imagem de fundo */
+    background-position: center;
+    
+    /* Define a cor de fundo com opacidade */
+    background-color: rgba(255, 255, 255, 1); /* Aqui, o último valor (0.5) é a opacidade (varia de 0 a 1) */
+
+    /* Outras propriedades, se necessário */
+    margin: 0; /* Certifique-se de remover as margens padrão */
+    padding: 0; /* Certifique-se de remover o preenchimento padrão */
+}
+
+/* AAAAAAAAAAAAAAAAAAAAAA                                           CSS PARA BOTOES GUARDA FICAR IGUAL HOME */
+#btnVoltarGuarda {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 150%;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #3498db; /* Cor da borda do botão */
+    border-radius: 5px; /* Borda arredondada */
+    color: #3498db; /* Cor do texto */
+    background-color: #ffffff; /* Cor de fundo do botão */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  }
+  
+  /* Efeito ao passar o mouse sobre o botão Voltar */
+  #btnVoltarGuarda:hover {
+    background-color: #3498db; /* Nova cor de fundo ao passar o mouse */
+    color: #ffffff; /* Nova cor do texto ao passar o mouse */
+    border-color: #ffffff; /* Nova cor da borda ao passar o mouse */
+  }
+  
+  /* Estilos para o botão Avançar */
+  #btnAvancarGuarda {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 150%;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #3498db; /* Cor da borda do botão */
+    border-radius: 5px; /* Borda arredondada */
+    color: #3498db; /* Cor do texto */
+    background-color: #ffffff; /* Cor de fundo do botão */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  }
+  
+  /* Efeito ao passar o mouse sobre o botão Avançar */
+  #btnAvancarGuarda:hover {
+    background-color: #3498db; /* Nova cor de fundo ao passar o mouse */
+    color: #ffffff; /* Nova cor do texto ao passar o mouse */
+    border-color: #ffffff; /* Nova cor da borda ao passar o mouse */
+  }
+  
+  /* AAAAAAAAAAAAAAAAAAA                                                      CSS PARA BOTOES GUARDA FICAR IGUAL HOME */
+  #btnVoltarImperatriz {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 150%;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      border: 2px solid #3498db; /* Cor da borda do botão */
+      border-radius: 5px; /* Borda arredondada */
+      color: #3498db; /* Cor do texto */
+      background-color: #ffffff; /* Cor de fundo do botão */
+      transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    }
+    
+    /* Efeito ao passar o mouse sobre o botão Voltar */
+    #btnVoltarImperatriz:hover {
+      background-color: #3498db; /* Nova cor de fundo ao passar o mouse */
+      color: #ffffff; /* Nova cor do texto ao passar o mouse */
+      border-color: #ffffff; /* Nova cor da borda ao passar o mouse */
+    }
+    
+    /* Estilos para o botão Avançar */
+    #btnAvancarImperatriz {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 150%;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      border: 2px solid #3498db; /* Cor da borda do botão */
+      border-radius: 5px; /* Borda arredondada */
+      color: #3498db; /* Cor do texto */
+      background-color: #ffffff; /* Cor de fundo do botão */
+      transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    }
+    
+    /* Efeito ao passar o mouse sobre o botão Avançar */
+    #btnAvancarImperatriz:hover {
+      background-color: #3498db; /* Nova cor de fundo ao passar o mouse */
+      color: #ffffff; /* Nova cor do texto ao passar o mouse */
+      border-color: #ffffff; /* Nova cor da borda ao passar o mouse */
+    }
+
+@media screen and (max-width: 1200px) {
+    .mainproduto {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        border-top: 2px solid black;
+    }
+
+    .mainproduto section {
+        margin-top: 20px;
+    }
+
+    .maindex {
+        margin-top: 25px;
+        padding-top: 0;
+    }
+    
+    header {
+        flex-direction:row;
+        align-items: center;
+        padding-right: 0;
+        height: 250px;
+        position: static;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 5px;
+        padding: 20px;
+    }
+
+    .bd {
+        border-right: none;
+        padding-right: 0;
+        border-bottom: 1px solid black;
+    }
+    .nada{
+        border-right: none;
+        padding-right: 0;
+        border-bottom: 1px solid black;
+    }
+
+    header nav ul li a:hover {
+        border-right: none;
+        border-bottom: 1px solid cyan;
+        box-shadow: none;
+    }
+
+    .tituloheader {
+        padding-left: 0;
+    }
+
+    .conteiner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagem-container{
+        max-width: 50vw;
+        max-height: auto;
+    }
+
+    #moldura {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .mcontato {
+        padding-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    .produtos1 {
+        margin-left: 1vw;
+    }
+    
+    .produtos2 {
+        margin-right: 1vw;
+    }
+    
+}
+
+@media screen and (max-width: 750px) {
+    .conteiner img {
+        width: 80vw;
+        height: auto;
+    }
+
+    .imagem-container{
+        margin-left: 10vw;
+        margin-right: 10vw; 
+    }
+
+    #moldura {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    }
+
+    footer nav {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .mcontato {
+        margin-top: 0;
+        padding-top: 50px;
+        margin-bottom: 100px;
+        
+    }
+
+    .mainproduto {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        padding-bottom: 10px;
+    }
+}
